@@ -1,11 +1,61 @@
-@extends('home.layout.layout')
-@section('title', '技术汇')
-@section('description', '技术汇')
-@section('keywords', '技术汇')
-@section('css')
-    <link rel="stylesheet" href="/static/plugin/swiper-4.5.0/css/swiper.min.css" />
-@endsection
-@section('content')
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html class="no-js fixed-layout">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><?php echo ($title); ?></title>
+  <meta name="keywords" content="<?php echo ($keywords); ?>">
+  <meta name="description" content="<?php echo ($description); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="renderer" content="webkit">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" type="image/png" href="">
+  <link rel="apple-touch-icon-precomposed" href="">
+  <meta name="apple-mobile-web-app-title" content="" />
+  <link rel="stylesheet" href="/public/static/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/public/static/home/css/common.css"/>
+  <link rel="stylesheet" href="/public/static/home/css/page.css">
+  <link rel="stylesheet" href="/public/static/home/css/style.css">
+  
+    <link rel="stylesheet" href="/public/static/plugin/swiper-4.5.0/css/swiper.min.css" />
+
+</head>
+<body>
+<header class="home-header">
+<section class="nav-container">
+  <div class="logo">
+      <a href="/">技术汇</a>
+  </div>  
+  <div class="nav-main">
+      <ul class="nav">
+          <li class="active"><a><i class="fa fa-home"></i> <span>首页</span><em></em></a></li>
+          <li ><a><i class="fa fa-html5"></i> <span>前端开发</span><em></em></a></li>
+          <li ><a><i class="fa fa-jsfiddle"></i> <span>后端开发</span><em></em></a></li>
+          <li ><a><i class="fa fa-mobile"></i> <span>移动开发</span><em></em></a></li>
+          <li ><a><i class="fa fa-empire"></i> <span>人工智能</span><em></em></a></li>
+          <li ><a><i class="fa fa-mixcloud"></i> <span>云计算/大数据</span><em></em></a></li>
+          <li ><a><i class="fa fa-support"></i> <span>技术支持</span><em></em></a></li>
+          <li ><a><i class="fa fa-code"></i> <span>源码</span><em></em></a></li>
+          <li ><a><i class="fa fa-chrome"></i> <span>互联网资讯</span><em></em></a></li>
+          <li><a><i class="fa fa-commenting-o"></i> <span>留言反馈</span><em></em></a></li>
+      </ul>
+  </div>
+
+  <div class="copyright">
+      <p>© 2019 Powered By Laravel 5.5</p>
+      <a href="http://www.miitbeian.gov.cn/">粤ICP备19028198号-1</a>
+  </div>
+</section>
+</header>
+<section class="main-container">
+<div class="search-box">
+  <div class="hot-keywords"><i class="fa fa-ellipsis-v"></i><span>热门关键词:</span><a>PHP</a> <a>HTML5</a> <a>CSS3</a></div>
+  <div class="login-box"><a class="btn btn-primary">登录</a><a class="btn btn-secondary">注册</a></div>
+  <div class="search-inp"><input name="search-txt" id="search-txt" placeholder="输入关键字!" /></div><a class="search-btn"><i class="fa fa-search"></i></a>
+</div>
+<section class="content-container">
+  
 <div class="position-nav">
     <a href="/">首页</a><i class="crumbs-arrow">&gt;</i>
 </div>
@@ -14,7 +64,7 @@
         <div class="content-item">
             <h1 class="title"><a>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 </a></h1>
             <div class="intro">
-            <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+            <a class="img"><img src="/public/static/home/images/img-demo1.jpg"></a>
             <p class="summary">
                 2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 
                 1、PHP语言的一大优势是跨平台，什么是跨平台？
@@ -34,7 +84,7 @@
         <div class="content-item">
             <h1 class="title"><a>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 </a></h1>
             <div class="intro">
-            <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+            <a class="img"><img src="/public/static/home/images/img-demo1.jpg"></a>
             <p class="summary">
                 2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 
                 1、PHP语言的一大优势是跨平台，什么是跨平台？
@@ -54,7 +104,7 @@
         <div class="content-item">
             <h1 class="title"><a>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 </a></h1>
             <div class="intro">
-            <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+            <a class="img"><img src="/public/static/home/images/img-demo1.jpg"></a>
             <p class="summary">
                 2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 
                 1、PHP语言的一大优势是跨平台，什么是跨平台？
@@ -74,7 +124,7 @@
         <div class="content-item">
             <h1 class="title"><a>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 </a></h1>
             <div class="intro">
-            <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+            <a class="img"><img src="/public/static/home/images/img-demo1.jpg"></a>
             <p class="summary">
                 2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 
                 1、PHP语言的一大优势是跨平台，什么是跨平台？
@@ -94,7 +144,7 @@
         <div class="content-item">
             <h1 class="title"><a>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 </a></h1>
             <div class="intro">
-            <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+            <a class="img"><img src="/public/static/home/images/img-demo1.jpg"></a>
             <p class="summary">
                 2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 
                 1、PHP语言的一大优势是跨平台，什么是跨平台？
@@ -112,7 +162,7 @@
             </div>
         </div>
     </div>
-    <div class="page" id="turn-ul">
+    <div class="page" id="turn-ul" style="">
     <div class="pagination">
         <ul>
             <li class="according-number">每页显示20条</li>
@@ -135,61 +185,30 @@
         </div>
         <ul class="sidebar-list">
             <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+                <a class="img"><img src="/public/static/home/images/img-demo1.jpg"></a>
                 <a class="title"><span>1</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
                 <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
             </li>
             <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+                <a class="img"><img src="/public/static/home/images/img-demo1.jpg"></a>
                 <a class="title"><span>2</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
                 <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
             </li>
             <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+                <a class="img"><img src="/public/static/home/images/img-demo1.jpg"></a>
                 <a class="title"><span>3</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
-                <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
-            </li>
-            <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
-                <a class="title"><span>4</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
-                <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
-            </li>
-            <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
-                <a class="title"><span>5</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
-                <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
-            </li>
-            <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
-                <a class="title"><span>6</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
-                <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
-            </li>
-            <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
-                <a class="title"><span>7</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
-                <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
-            </li>
-            <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
-                <a class="title"><span>8</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
-                <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
-            </li>
-            <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
-                <a class="title"><span>9</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
-                <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
-            </li>
-            <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
-                <a class="title"><span>10</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
                 <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
             </li>
         </ul>
     </aside>
 </div>
-@endsection
-@section('js')
-    <script src="/static/plugin/swiper-4.5.0/js/swiper.min.js"></script>
+
+</section>
+</section>
+<footer></footer>
+<script src="/public/static/home/js/jquery-1.11.3.min.js"></script>
+
+    <script src="/public/static/plugin/swiper-4.5.0/js/swiper.min.js"></script>
     <script>
         $(document).ready(function () {
             var mySwiper = new Swiper ('.swiper-container', {
@@ -206,5 +225,6 @@
             })
         })
     </script>
-@endsection
 
+</body>
+</html>

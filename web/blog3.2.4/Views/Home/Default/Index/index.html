@@ -1,11 +1,11 @@
-@extends('home.layout.layout')
-@section('title', '技术汇')
-@section('description', '技术汇')
-@section('keywords', '技术汇')
-@section('css')
-    <link rel="stylesheet" href="/static/plugin/swiper-4.5.0/css/swiper.min.css" />
-@endsection
-@section('content')
+<extend name="Public:base" />
+<block name="title"><title><{$title}></title></block>
+<block name="keywords"><meta name="keywords" content="<{$keywords}>"></block>
+<block name="description"><meta name="description" content="<{$description}>"></block>
+<block name="css">
+    <link rel="stylesheet" href="__PLUGIN__/swiper-4.5.0/css/swiper.min.css" />
+</block>
+<block name="content">
 <div class="position-nav">
     <a href="/">首页</a><i class="crumbs-arrow">&gt;</i>
 </div>
@@ -14,7 +14,7 @@
         <div class="content-item">
             <h1 class="title"><a>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 </a></h1>
             <div class="intro">
-            <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+            <a class="img"><img src="__IMAGES__/img-demo1.jpg"></a>
             <p class="summary">
                 2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 
                 1、PHP语言的一大优势是跨平台，什么是跨平台？
@@ -34,7 +34,7 @@
         <div class="content-item">
             <h1 class="title"><a>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 </a></h1>
             <div class="intro">
-            <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+            <a class="img"><img src="__IMAGES__/img-demo1.jpg"></a>
             <p class="summary">
                 2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 
                 1、PHP语言的一大优势是跨平台，什么是跨平台？
@@ -54,7 +54,7 @@
         <div class="content-item">
             <h1 class="title"><a>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 </a></h1>
             <div class="intro">
-            <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+            <a class="img"><img src="__IMAGES__/img-demo1.jpg"></a>
             <p class="summary">
                 2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 
                 1、PHP语言的一大优势是跨平台，什么是跨平台？
@@ -74,7 +74,7 @@
         <div class="content-item">
             <h1 class="title"><a>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 </a></h1>
             <div class="intro">
-            <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+            <a class="img"><img src="__IMAGES__/img-demo1.jpg"></a>
             <p class="summary">
                 2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 
                 1、PHP语言的一大优势是跨平台，什么是跨平台？
@@ -94,7 +94,7 @@
         <div class="content-item">
             <h1 class="title"><a>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 </a></h1>
             <div class="intro">
-            <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+            <a class="img"><img src="__IMAGES__/img-demo1.jpg"></a>
             <p class="summary">
                 2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪 
                 1、PHP语言的一大优势是跨平台，什么是跨平台？
@@ -135,26 +135,26 @@
         </div>
         <ul class="sidebar-list">
             <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+                <a class="img"><img src="__IMAGES__/img-demo1.jpg"></a>
                 <a class="title"><span>1</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
                 <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
             </li>
             <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+                <a class="img"><img src="__IMAGES__/img-demo1.jpg"></a>
                 <a class="title"><span>2</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
                 <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
             </li>
             <li>
-                <a class="img"><img src="/static/home/images/img-demo1.jpg"></a>
+                <a class="img"><img src="__IMAGES__/img-demo1.jpg"></a>
                 <a class="title"><span>3</span>2019 PHP 初级 / 基础面试题，祝你金三银四跳槽加薪</a>
                 <p><i class="fa fa-clock-o fa-fw"></i> <span>2019-03-30</span></p>
             </li>
         </ul>
     </aside>
 </div>
-@endsection
-@section('js')
-    <script src="/static/plugin/swiper-4.5.0/js/swiper.min.js"></script>
+</block>
+<block name="js">
+    <script src="__PLUGIN__/swiper-4.5.0/js/swiper.min.js"></script>
     <script>
         $(document).ready(function () {
             var mySwiper = new Swiper ('.swiper-container', {
@@ -171,5 +171,5 @@
             })
         })
     </script>
-@endsection
+</block>
 
